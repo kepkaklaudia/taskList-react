@@ -1,0 +1,30 @@
+.buttons {
+  padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .buttons {
+    display: grid;
+    grid-gap: 15px;
+  }
+}
+
+.buttons_button {
+  border: none;
+  background-color: transparent;
+  color: hsl(180, 100%, 25%);
+  transition: 0.5s;
+}
+
+.buttons_button:hover {
+  color: hsl(180, 100%, 30%);
+  cursor: pointer;
+}
+
+.buttons_button:active {
+  color: hsl(180, 100%, 35%);
+}
+
+.buttons_button:disabled {
+  color: hsla(0, 0%, 49%, 0.389);
+}

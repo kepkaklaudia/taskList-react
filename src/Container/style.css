@@ -1,0 +1,15 @@
+.container {
+  margin: 15px auto;
+  line-height: 1.15;
+  word-break: break-word;
+  display: grid;
+  grid-gap: 10px;
+  max-width: 1000px;
+  padding: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 15px;
+  }
+}
