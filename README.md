@@ -1,4 +1,4 @@
-# <img src="images/icon.png" height="30"/> Task List Website 
+# <img src="public/icon.png" height="30"/> Task List Website 
 <img src="images/show.gif" height="250"/>
 
 <img src="images/myIcons/kk.png" height="15"/> Made by Klaudia Kępka
