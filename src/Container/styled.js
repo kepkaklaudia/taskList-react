@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Main = styled.div`
+export const Container = styled.div`
   margin: 15px auto;
   line-height: 1.15;
   word-break: break-word;
