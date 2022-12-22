@@ -22,7 +22,7 @@ const Form = ({ addNewTask }) => {
     inputRef.current.focus();
   };
   return (
-    <Wrapper
+    <StyledForm
       onSubmit={onFormSubmit}
     >
       <Input
@@ -36,7 +36,7 @@ const Form = ({ addNewTask }) => {
       >
         Dodaj zadanie
       </Button>
-    </Wrapper>
+    </StyledForm>
   )
 };
 
