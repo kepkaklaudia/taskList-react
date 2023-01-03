@@ -34,7 +34,7 @@ export const Button = styled.button`
   border: none;
   margin: 0;
   transition: 0.5s;
-  `;
+`;
 
 export const DoneButton = styled(Button)`
   background-color: ${({theme}) => theme.color.green};
