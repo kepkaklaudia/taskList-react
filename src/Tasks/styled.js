@@ -9,7 +9,7 @@ export const Item = styled.li`
   display: grid;
   grid-template-columns: auto 1fr auto;
   margin: 10px;
-  border-bottom: solid 1px hsl(0, 0%, 94%);
+  border-bottom: solid 1px ${({theme}) => theme.color.gallery};
   align-items: center;
 
   ${({hidden}) => hidden && css`
@@ -26,8 +26,8 @@ export const Content = styled.span`
 `;
 
 export const Button = styled.button`
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(348, 83%, 47%);
+  color: ${({theme}) => theme.color.white};
+  background-color: ${({theme}) => theme.color.crimson};
   width: 30px;
   height: 30px;
   padding: 2px;
@@ -37,25 +37,25 @@ export const Button = styled.button`
   `;
 
 export const DoneButton = styled(Button)`
-  background-color: hsl(120, 61%, 34%);
+  background-color: ${({theme}) => theme.color.green};
 
   &:hover{
-    background-color: hsl(120, 61%, 39%);
+    background-color: ${({theme}) => theme.color.forest};
     cursor: pointer;
   }
 
   &:active{
-    background-color: hsl(120, 61%, 44%);
+    background-color: ${({theme}) => theme.color.grass};
   }
 `;
 
 export const RemoveButton = styled(Button)`
   &:hover{
-    background-color: hsl(348, 83%, 52%);
+    background-color: ${({theme}) => theme.color.amaranth};
     cursor: pointer;
   }
 
   &:active{
-    background-color: hsl(348, 83%, 57%);
+    background-color: ${({theme}) => theme.color.mulberry};
   }
 `;

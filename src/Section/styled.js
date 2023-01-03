@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  background-color: hsl(0, 0%, 100%);
+  background-color: ${({theme}) => theme.color.white};
   min-height: 120px;
-  box-shadow: 0 0 5px hsl(0, 0%, 94%);
+  box-shadow: 0 0 5px ${({theme}) => theme.color.gallery};
 `;
 
 export const Header = styled.header`
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  border-bottom: solid 1px hsl(0, 0%, 94%);
+  border-bottom: solid 1px ${({theme}) => theme.color.gallery};
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
     padding: 10px;
   }

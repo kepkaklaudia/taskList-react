@@ -6,48 +6,48 @@ export const StyledForm = styled.form`
   grid-gap: 20px;
   padding: 15px;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: auto;
     grid-gap: 15px;
   }
 `;
 
 export const Input = styled.input`
-  border: solid 2px hsl(0, 0%, 94%);
+  border: solid 2px ${({theme}) => theme.color.gallery};
   padding: 10px;
 
   &:focus{
-    border: solid 2px hsl(0, 0%, 100%);
-    outline: solid 1px hsl(0, 0%, 0%);
+    border: solid 2px ${({theme}) => theme.color.white};
+    outline: solid 1px ${({theme}) => theme.color.black};
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     &:focus{
-      border: solid 2px hsl(0, 0%, 100%);
-      outline: solid 1px hsl(22, 100%, 56%);
+      border: solid 2px ${({theme}) => theme.color.white};
+      outline: solid 1px ${({theme}) => theme.color.orange};
     }
   }
 `;
 
 export const Button = styled.button`
-  color: white;
-  background-color: hsl(180, 100%, 25%);
+  color: ${({theme}) => theme.color.white};
+  background-color: ${({theme}) => theme.color.teal};
   border: none;
   padding: 10px;
   font-weight: 300;
   transition: 0.5s;
 
   &:hover{
-    background-color: hsl(180, 100%, 30%);
+    background-color: ${({theme}) => theme.color.persian};
     transform: scale(1.1);
     cursor: pointer;
   }
 
   &:active{
-    background-color: hsl(180, 100%, 35%);
+    background-color: ${({theme}) => theme.color.bondi};
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     &:hover{
       transform: scale(1.05);
     }

@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #f0f0f0;
+    background-color: ${({theme}) => theme.color.gallery};
     font-family: 'Montserrat', sans-serif;
   }
 `;

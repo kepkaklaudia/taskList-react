@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 10px;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     display: grid;
     grid-gap: 15px;
   }
@@ -11,20 +11,20 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border: none;
-  background-color: transparent;
-  color: hsl(180, 100%, 25%);
+  background-color: ${({theme}) => theme.color.transparent};
+  color: ${({theme}) => theme.color.teal};
   transition: 0.5s;
 
   &:hover{
-    color: hsl(180, 100%, 30%);
+    color: ${({theme}) => theme.color.persian};
     cursor: pointer;
   }
 
   &:active{
-    color: hsl(180, 100%, 35%);
+    color: ${({theme}) => theme.color.bondi};
   }
 
   &:disabled{
-    color: hsla(0, 0%, 49%, 0.389);
+    color: ${({theme}) => theme.color.boulder};
   }
 `;

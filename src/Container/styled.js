@@ -9,7 +9,7 @@ export const Container = styled.div`
   max-width: 1000px;
   padding: 30px;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     padding: 15px;
   }
 `;
