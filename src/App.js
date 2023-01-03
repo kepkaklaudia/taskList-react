@@ -7,7 +7,8 @@ import { Container } from "./Container/styled";
 import { useTasks } from "./useTasks";
 
 function App() {
-  const { tasks,
+  const { 
+    tasks,
     hideDone,
     toggleHideDone,
     removeTask,
