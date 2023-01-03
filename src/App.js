@@ -7,7 +7,6 @@ import { Container } from "./Container/styled";
 import { useTasks } from "./useTasks";
 
 function App() {
-
   const { tasks,
     hideDone,
     toggleHideDone,
@@ -20,7 +19,6 @@ function App() {
   return (
     <Container>
       <Header title="Lista zadań" />
-
       <Section
         title="Dodaj nowe zadanie"
         body={
@@ -29,7 +27,6 @@ function App() {
           />
         }
       />
-
       <Section title="Lista zadań"
         body={
           <Tasks

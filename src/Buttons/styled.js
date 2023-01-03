@@ -10,10 +10,10 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-    border: none;
-    background-color: transparent;
-    color: hsl(180, 100%, 25%);
-    transition: 0.5s;
+  border: none;
+  background-color: transparent;
+  color: hsl(180, 100%, 25%);
+  transition: 0.5s;
 
   &:hover{
     color: hsl(180, 100%, 30%);
