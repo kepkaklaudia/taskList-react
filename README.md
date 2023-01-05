@@ -4,7 +4,7 @@
 <img src="images/myIcons/kk.png" height="15"/> Made by Klaudia Kępka
 
 ## <img src="images/myIcons/demo.png" height="20"/> Task List Demo Website:
-[Task List Demo Website](https://kepkaklaudia.github.io/taskList-redux/)
+[Task List Demo Website](https://kepkaklaudia.github.io/taskList-react/)
 
 ## <img src="images/myIcons/quick.png" height="20"/> Quick Preview
 ![gifPreview](images/preview.gif)
